@@ -45,21 +45,6 @@ def monopoly_with_third_tier
   }
 end
 
-This method builds on the hash returned by monopoly_with_second_tier updating
-the nested `:rent_in_dollars` hash so that it includes:
-
-- a `:one_piece_owned` key set to `25`
-- a `:two_pieces_owned` key set to `50`
-- a `:three_pieces_owned` key set to `100`
-- a `:four_pieces_owned` key set to `200`
-
-In addition, this method should also update the nested `:names` hash so that it includes:
-
-- a `:reading_railroad` key that points to an empty hash
-- a `:pennsylvania_railroad` key that points to an empty hash
-- a `:b_and_o_railroad` key that points to an empty hash
-- a `:shortline_railroad` key that points to an empty hash
-
 
 def monopoly_with_fourth_tier
   # When you start writing the implementation for this method, copy the Hash

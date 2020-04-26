@@ -61,12 +61,22 @@ def monopoly_with_fourth_tier
         :four_pieces_owned => 200
     },
     :names => {
-        :reading_railroad => {},
-        :pennsylvania_railroad => {},
-        :b_and_o_railroad => {},
-        :shortline_railroad => {}
+        :reading_railroad => {:mortgage_value => 100},
+        :pennsylvania_railroad => {:mortgage_value => 200},
+        :b_and_o_railroad => {:mortgage_value => 400},
+        :shortline_railroad => {:mortgage_value => 800}
     }
   }
   }
-  
+
+
+  This method builds on the hash returned by monopoly_with_third_tier, updating
+  each of the nested hashes inside the `:names` hash so that
+
+  - he hash assigned to `:reading_railroad` includes a `:mortgage_value` key set
+    to `100`
+  - the hash assigned to `:pennsylvania_railroad` includes a `:mortgage_value` key set to `200`
+  - the hash assigned to `:b_and_o_railroad` includes a `:mortgage_value` key set to `400`
+  - the hash assigned to `:shortline_railroad` includes a `:mortgage_value` key set to `800`
+
 end

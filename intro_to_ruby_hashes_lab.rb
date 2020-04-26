@@ -47,7 +47,7 @@ end
 
 This method builds on the hash returned by monopoly_with_second_tier updating
 the nested `:rent_in_dollars` hash so that it includes:
-  
+
 - a `:one_piece_owned` key set to `25`
 - a `:two_pieces_owned` key set to `50`
 - a `:three_pieces_owned` key set to `100`
